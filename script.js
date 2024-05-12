@@ -23,6 +23,6 @@ Promise.all(array).then((d)=>{
 	a.innerHTML=`<tr><td>Promise 1</td><td>1.500</td></tr>
 	<tr><td>Promise 2</td><td>1.200</td></tr>
 	<tr><td>Promise 3</td><td>1.950</td></tr>
-	<tr><td>Total</td><td>${final.toFixed(4)}</td></tr>
+	<tr><td>Total</td><td>${final.toFixed(3)}</td></tr>
 	`;
 });
