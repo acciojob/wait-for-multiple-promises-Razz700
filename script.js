@@ -1,5 +1,6 @@
 //your JS code here. If required.
 let d1=new Date();
+let a=document.getElementById('output');
 const p1=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
