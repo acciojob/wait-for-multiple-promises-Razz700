@@ -1,20 +1,21 @@
 //your JS code here. If required.
-let array=[p1,p2,p3];
+
 const p1=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
-	});
-},1500);
+	},1500);
+});
 const p2=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
-	});
-},2000);
+	},2000);
+});
 const p3=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
-	}
-},2500);
+	},2500);
+});
+let array=[p1,p2,p3];
 Promise.all(array).then((d)=>{
 	let a=document.getElementById('output');
 	a.innerHTML=``;
