@@ -9,7 +9,7 @@ const p1=new Promise((a,b)=>{
 const p2=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
-	},1200);
+	},2200);
 });
 const p3=new Promise((a,b)=>{
 	setTimeout(()=>{
@@ -21,7 +21,7 @@ Promise.all(array).then((d)=>{
 	let d2=new Date();
 	let final=d2.getSeconds()-d1.getSeconds()+(d2.getMilliseconds()-d1.getMilliseconds())/1000;
 	a.innerHTML=`<tr><td>Promise 1</td><td>1.500</td></tr>
-	<tr><td>Promise 2</td><td>1.200</td></tr>
+	<tr><td>Promise 2</td><td>2.200</td></tr>
 	<tr><td>Promise 3</td><td>1.950</td></tr>
 	<tr><td>Total</td><td>${final.toFixed(3)}</td></tr>
 	`;
