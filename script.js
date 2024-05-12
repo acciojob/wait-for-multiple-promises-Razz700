@@ -1,7 +1,5 @@
 //your JS code here. If required.
 let d1=new Date();
-let a=document.getElementById('output');
-a.innerHTML=` <tr><td colspan='2'>Loading...</td></tr>`;
 const p1=new Promise((a,b)=>{
 	setTimeout(()=>{
 		a('resolved');
